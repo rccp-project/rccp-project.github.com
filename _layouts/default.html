@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<a href="/" class="logo"><img src="/res/logo.png" width="100" height="100" alt="logo" /></a>
+		<h1>
+			<a href="/">Русская Космическая Когнитивная Партия</a>
+		</h1>
+	</header>
+	{% if page.index %}
+	{% include nav.html %}
+	{% endif %}
+	<div id="main" role="main">
+		{{ page.content|markdownify }}
+	</div>
+
+	<footer><!-- --></footer>
+</div>
+</body>
+</html>
