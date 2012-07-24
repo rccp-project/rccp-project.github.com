@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<title>{{ page.title }}</title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
 <div id="wrapper">
-	<header>
-		<a href="/" class="logo"><img src="/res/logo.png" width="100" height="100" alt="logo" /></a>
-		<h1>
-			<a href="/">Русская Космическая Когнитивная Партия</a>
-		</h1>
-	</header>
-	{% if page.index %}
-	{% include nav.html %}
-	{% endif %}
-	<div id="main" role="main">
-		{{ page.content|markdownify }}
-	</div>
+    <header>
+        <a href="/" class="logo"><img src="/res/logo.png" width="100" height="100" alt="logo" /></a>
+        <h1>
+            <a href="/">Русская Космическая Когнитивная Партия</a>
+        </h1>
+    </header>
+    {% if page.index %}
+    {% include nav.html %}
+    {% endif %}
+    <div id="main" role="main">
+        {{ page.content|markdownify }}
+    </div>
 
-	<footer><!-- --></footer>
+    <footer>
+        <p>Проект общественно-политической организации «Русская Космическая Когнитивная Партия»<br />© 2012</p>
+    </footer>
 </div>
 </body>
 </html>
