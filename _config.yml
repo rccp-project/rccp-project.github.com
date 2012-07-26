@@ -1,4 +1,4 @@
 markdown: kramdown
 
 kramdown:
-	auto_ids: false
+    auto_ids: false
