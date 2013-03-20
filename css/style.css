@@ -1,1 +1,273 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,latin-ext,cyrillic);body{background:#f8f8f5;color:#333;text-shadow:0 0 1px rgba(0,0,0,0.1)}#wrapper{height:100%;width:100%}header{width:100%;clear:both;margin-top:120px;font-family:'Georgia','Palatino Linotype',Palatino,'Book Antiqua',serif}.logo{display:block;margin:20px auto;height:100px;width:100px}.logo img{border:0}header h1{display:block;margin:auto;text-align:center;font-size:36pt;letter-spacing:.1em;text-shadow:0 0 1px rgba(0,0,0,0.3)}header h1 a{text-decoration:none;color:#333;font-weight:normal}.clearer{width:100%;height:0;clear:both}nav{clear:both;display:block;max-width:400px;margin-left:auto;margin-right:auto;margin-top:100px;text-align:center;font-family:'Georgia','Palatino Linotype',Palatino,'Book Antiqua',serif}nav ul{list-style:none;padding:0;margin:0}nav ul li{display:inline}nav ul li a{line-height:normal;font-size:20px;font-weight:normal;padding:14px 24px;margin-right:20px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;border:1px solid #ccc;border-color:rgba(0,0,0,0.1);text-decoration:none;font-style:oblique;color:#666;text-shadow:0 0 1 rgba(0,0,0,0.1);box-shadow:box-shadow:inset 0 1px 0}nav ul li a:hover{background:#e6e6e6}#main{clear:both;max-width:960px;margin:120px auto;font-family:'Open Sans',sans-serif}#main h1,#main h2,#main h3,#main h4,#main h5,#main h6{font-family:'Georgia','Palatino Linotype',Palatino,'Book Antiqua',serif;font-style:italic;margin:auto;margin-top:2em;text-align:center}#main h1:first-child{margin-top:50px;font-size:20pt;font-style:normal;letter-spacing:.1em}#main p:first-letter {margin-left:2em}footer{text-align:center;font-size:small;font-family:'Open Sans',sans-serif}@media only screen and (max-width :1280px){header{margin-top:0}}@media only screen and (max-width :480px){header{margin-top:0}header h1{font-size:28pt}.logo{margin-top:0}nav ul li{display:block;clear:both}nav ul li:first-child{margin-bottom:4em}}@media only screen and (max-width :360px){header h1{text-align:left}}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+/*@import url(http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic,cyrillic-ext);
+*/
+body {
+    /*background: #fdfdfa;*/
+    background: #f8f8f5;
+/*  color: #080000;
+*/
+    color: #333;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+}
+
+/*body:before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    z-index: 100;
+}*/
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    clear: both;
+    margin-top: 120px;
+/*  font-family: 'Palatino Linotype';
+*/
+    font-family: 'Georgia', 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+/*  font-family: 'EB Garamond', serif;
+*/}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    height: 100px;
+    width: 100px;
+}
+
+.logo img {
+    border: 0px;
+}
+
+/*.projectim {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border: 0px;
+}*/
+
+.projectim {
+    border: 0px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#projectsp {
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #f00;
+    box-shadow: 0px 0px 1px #f00;
+    font-size: 28pt;
+    color: #f00;
+    border: 4px solid #f00;
+    border-radius: 8px;
+    padding: 4px;
+    top: 70px;
+    left: 10px;
+    -moz-transform:rotate(-36deg);
+    -webkit-transform:rotate(-36deg);
+    -o-transform:rotate(-36deg);
+    -ms-transform:rotate(-36deg);
+    display: none;
+}
+
+header h1 {
+    display: block;;
+    margin: auto;
+/*  max-width: 1000px;
+*/  text-align: center;
+    font-size: 36pt;
+    letter-spacing: 0.1em;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    /*position: relative;*/
+}
+
+.clearer {
+    width: 100%;
+    height: 0px;
+    clear: both;
+}
+
+nav {
+    clear: both;
+    display: block;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Georgia', 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    line-height: normal;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 14px 24px;
+    margin-right: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.1);
+/*  background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+    background-image: -o-linear-gradient(top, white, #E6E6E6);
+    background-image: linear-gradient(top, white, #E6E6E6);
+    background-image: -moz-linear-gradient(top, white, #E6E6E6);
+    background-repeat: repeat-x;*/
+    text-decoration: none;
+    font-style: oblique;
+    color:#666;
+    text-shadow:0 0 1 rgba(0,0,0,0.1);
+    box-shadow: box-shadow: inset 0 1px 0;
+}
+
+nav ul li a:hover {
+    background: #e6e6e6;
+}
+
+#main {
+    clear: both;
+    max-width: 960px;
+    margin: 120px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+    font-family: 'Georgia', 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+    font-style: italic;
+    margin:auto;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#main h1:first-child {
+    margin-top: 50px;
+    font-size: 20pt;
+    font-style: normal;
+    letter-spacing: 0.2em;
+}
+
+#main p:first-letter {
+    margin-left: 2em;
+}
+
+#main a {
+    /*color:#a1a150;*/
+    /*color: #35466c;*/
+    color: #325566;
+    /*color: #5e8c45;*/
+    font-style:oblique;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: small;
+}
+/*footer {
+    text-align: center;
+    background: #f8f8f5;
+    background: -moz-linear-gradient(top, #f8f8f5 0%, #f8f8f5 30%, #7a4642 100%);
+    background: -webkit-linear-gradient(top, #f8f8f5 0%,#f8f8f5 30%,#7a4642 100%);
+    background: -o-linear-gradient(top, #f8f8f5 0%,#f8f8f5 30%,#7a4642 100%);
+    background: -ms-linear-gradient(top, #f8f8f5 0%,#f8f8f5 30%,#7a4642 100%);
+    background: linear-gradient(to bottom, #f8f8f5 0%,#f8f8f5 30%,#7a4642 100%);
+}*/
+
+/*@media only print {
+    header, footer, nav {
+        display: none;
+    }
+}*/
+
+/* adaptive design attempt, lol: */
+
+@media only screen and (max-width : 1280px) {
+    header {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    header {
+        margin-top: 0px;
+    }
+    header h1 {
+        font-size: 28pt;
+    }
+    #projectsp {
+        /*-webkit-transform:none;
+        -o-transform:none;
+        -moz-transform:none;
+        -ms-transform:none;
+        top:10px;*/
+        display: none;
+    }
+    .logo {
+        margin-top: 0px;
+    }
+    nav ul li {
+        display: block;
+        clear: both;
+        margin-top: 4em;
+    }
+    nav ul li:first-child {
+        margin-bottom: 4em;
+    }
+
+    #main {
+        max-width: 460px;
+        margin-top: 2em;
+    }
+    #main p:first-letter {
+        margin-left: 1em;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    header h1 {
+        text-align: left;
+    }
+    #main {
+        max-width: 350px;
+    }
+}
+
+/* TODO: 
+    1. decide if we need a "project" badge.
+    2. remake favicon or?..
+    3. footer
+    4. minify
+*/
